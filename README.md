@@ -53,11 +53,8 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 ## Contact
 
-For any queries or feedback, feel free to contact us at contact@buroapp.com.
+For any queries or feedback, feel free to contact us.
 
 ---
 
 Buro - Bringing the convenience of online marketplace and rental services to your Telegram!
-```
-
-This template is designed to give a clear overview of the project, its features, and how to get started with it. You can customize it further according to the specific details and requirements of your project.
