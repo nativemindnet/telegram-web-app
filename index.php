@@ -18,6 +18,5 @@
 
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 	<script src="/script/script.js"></script>
-
 </body>
 </html>
