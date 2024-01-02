@@ -19,7 +19,7 @@ Buro is a cutting-edge Web App designed for Telegram, focusing on the Thailand m
    ```
    git clone https://github.com/nativemindnet/telegram-web-app.git
    ```
-**2. Create Database connection file**
+**2. Create Database connection file in root directory (db.php)**
    ```
    <?php
       $server = "<server address/localhost>";
