@@ -1,6 +1,5 @@
 <?php
 	header("Access-Control-Allow-Origin: *");
-	$homeC = '94';
 ?>
 <!DOCTYPE html>
 <html lang="ru">
