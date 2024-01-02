@@ -27,9 +27,7 @@
 	<link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-	<div class="container post">
-		<a class="mainBtn" href="https://gleb.space/estate/view">Пост успешно удален!</a>
-	</div>
+	<a class="mainBtn" href="https://burohh.com/estate/view">Пост успешно удален!</a>
 
 	<div class="footer">
 		<a class="navBtn" id="back" href="/"><span>🏠</span></a>

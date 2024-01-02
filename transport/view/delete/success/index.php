@@ -27,9 +27,7 @@
 	<link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-	<div class="container post">
-		<a class="mainBtn" href="https://gleb.space/transport/view">Пост был успешно удален!</a>
-	</div>
+	<a class="mainBtn" href="https://burohh.com/transport/view">Пост был успешно удален!</a>
 
 	<div class="footer">
 		<a class="navBtn" id="back" href="/"><span>🏠</span></a>
