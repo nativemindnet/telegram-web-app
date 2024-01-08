@@ -57,7 +57,7 @@
 				<option value="4">4</option>
 				<option value="5 и более">5 и более</option>
 			</select>
-			<input type="number" placeholder="Площадь (в кв.м.)" name="Size" id="text3">
+			<input type="number" pattern="\d*" placeholder="Площадь (в кв.м.)" name="Size" id="text3">
 			<select name="Pool" id="select2">
 				<option value="change">Бассейн</option>
 				<?php $query = mysqli_query($link, "SELECT
