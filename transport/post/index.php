@@ -65,7 +65,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/db.php";
 						<option value='<?php echo $result['ID'] ?>;<?php echo $result['unit_ru'] ?>'><?php echo $result['unit_ru'] ?></option>
 					<?php } ?>
 			</select>
-			<input type="number" placeholder="Цена (в тайских батах)" name="Price" id="text3">
+			<input type="number" pattern="\d*" placeholder="Цена (в тайских батах)" name="Price" id="text3">
 			<input type="text" placeholder="Комментарий" name="Comment" id="text4">
 			<label id="file-upload">
 			<input type="file" accept="image/*" name="FileToSave" id="FileToSave" onchange="fileChange()">

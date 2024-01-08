@@ -37,7 +37,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/db.php";
 			<select name="Type2" id="select2" style="display: none;">
 				<option value="change">Подтип</option>
 			</select>
-			<input type="text" name="Price" id="text" placeholder="Цена">
+			<input type="number" pattern="\d*" name="Price" id="price" placeholder="Цена (в тайских батах)">
 			<textarea form="form" placeholder="Коментарий" name="Message" id="message" maxlength="255" cols="30" rows="10"></textarea>
 			<input type="text" name="MsgID" id="msgHide">
 			<input type="text" name="Author" id="authorHide">
@@ -106,7 +106,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/db.php";
 			var category = document.getElementById("select").value;
 			var type = document.getElementById("select1").value;
 			var type2 = document.getElementById("select2").value;
-			var price = document.getElementById("text").value;
+			var price = document.getElementById("price").value;
 			var message = document.getElementById("message").value;
 
 			if (category == "change" || type == "change" || type2 == "change") {

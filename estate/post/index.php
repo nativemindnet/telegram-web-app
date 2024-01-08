@@ -99,7 +99,7 @@
 						<option value='<?php echo $result['ID'] ?>;<?php echo $result['unit_ru'] ?>'><?php echo $result['unit_ru'] ?></option>
 					<?php } ?>
 			</select>
-			<input type="number" placeholder="Цена (в тайских батах)" name="Price" id="text5">
+			<input type="number" pattern="\d*" placeholder="Цена (в тайских батах)" name="Price" id="text5">
 			<input type="text" placeholder="Местоположение" name="Location" id="text6">
 			<input type="text" placeholder="Комментарий" name="Comment" id="text7">
 			<label id="file-upload">

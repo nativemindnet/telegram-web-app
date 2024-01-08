@@ -105,7 +105,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/db.php";
 				<?php } ?>
 			</select>
 
-			<input type="number" placeholder="Цена (в тайских батах)" name="Price" id="text4">
+			<input type="number" pattern="\d*" placeholder="Цена (в тайских батах)" name="Price" id="text4">
 
 			<input type="text" placeholder="Местоположение" name="Location" id="text">
 			<textarea placeholder="Сообщение" form="form" name="Message" id="message" maxlength="255" cols="30" rows="10"></textarea>
