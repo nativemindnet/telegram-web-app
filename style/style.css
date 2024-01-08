@@ -45,7 +45,7 @@
 }
 body {
 	width: 100%;
-	height: 100dvh;
+	min-height: 100vh;
 	background: var(--main-bg-color);
 	display: flex;
 	flex-direction: column;
