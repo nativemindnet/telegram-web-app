@@ -1,7 +1,7 @@
 tg = window.Telegram.WebApp;
-console.log(tg.platform);
-tg.ready();
-tg.expand();
+
+if (tg.platform == "unknown") location.replace("/50x.html");
+
 document.cookie = "huahinUser=" + tg.initDataUnsafe.user.username;
 document.cookie = "huahinUserID=" + tg.initDataUnsafe.user.id;
 
