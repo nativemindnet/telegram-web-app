@@ -54,7 +54,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/db.php";
 					<?php } ?>
 			</select>
 			<input type="text" placeholder="Модель" name="Model" id="text1">
-			<input type="number" placeholder="Минимальный срок аренды" name="MinPeriod" id="text2">
+			<input type="number" pattern="\d*" placeholder="Минимальный срок аренды" name="MinPeriod" id="text2">
 			<select name="Unit" id="select4">
 				<option value="change">день/неделя/месяц</option>
 				<?php $query = mysqli_query($link, "SELECT

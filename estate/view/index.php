@@ -169,7 +169,7 @@
 				<p id="pool">Бассейн: <?php echo $result['Pool']; ?></p>
 				<p id="children">Инфраструктура для детей: <?php echo $result['Children']; ?></p>
 				<p id="pet">Домашние питомцы: <?php echo $result['Pet']; ?></p>
-				<p>Минимальный период: <?php echo $result['MinPeriod']; ?> <?php echo $result['Unit'] ?></p>
+				<p>Минимальный срок аренды: <?php echo $result['MinPeriod']; ?> <?php echo $result['Unit'] ?></p>
 				<p id="price">Цена: <?php echo $result['Price']; ?> ฿</p>
 				<p>Местоположение: <?php echo $result['Location']; ?></p>
 				<p>Комментарий: <?php echo $result['Comment'];

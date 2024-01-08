@@ -88,7 +88,7 @@
 					<option value='<?php echo $result['ID'] ?>;<?php echo $result['estate_pet_ru'] ?>'><?php echo $result['estate_pet_ru'] ?></option>
 				<?php } ?>
 			</select>
-			<input type="number" placeholder="Минимальный период" name="MinPeriod" id="text4">
+			<input type="number" pattern="\d*" placeholder="Минимальный срок аренды" name="MinPeriod" id="text4">
 			<select name="Unit" id="select5">
 				<option value="change">Единица времени</option>
 				<?php $query = mysqli_query($link, "SELECT
@@ -171,7 +171,7 @@
 			+ "%0AИнфраструктура для детей: " + children.slice(children.indexOf(';') + 1)
 			+ "%0AБассейн: " + pool.slice(pool.indexOf(';') + 1)
 			+ "%0AДомашние питомцы: " + pet.slice(pet.indexOf(';') + 1)
-			+ "%0AМинимальный период: " + minPeriod
+			+ "%0AМинимальный срок аренды: " + minPeriod
 			+ " " + unit.slice(unit.indexOf(';') + 1)
 			+ "%0AЦена: " + price + " ฿"
 			+ "%0AМестоположение: " + location
