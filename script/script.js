@@ -1,6 +1,6 @@
 tg = window.Telegram.WebApp;
 
-if (tg.platform == "unknown") location.replace("/platfrom");
+if (tg.platform == "unknown") location.replace("/platform");
 
 document.cookie = "huahinUser=" + tg.initDataUnsafe.user.username;
 document.cookie = "huahinUserID=" + tg.initDataUnsafe.user.id;
