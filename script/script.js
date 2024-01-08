@@ -1,4 +1,6 @@
 tg = window.Telegram.WebApp;
+console.log(tg.platform());
+tg.ready();
 tg.expand();
 document.cookie = "huahinUser=" + tg.initDataUnsafe.user.username;
 document.cookie = "huahinUserID=" + tg.initDataUnsafe.user.id;
