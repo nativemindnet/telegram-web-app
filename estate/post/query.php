@@ -85,8 +85,8 @@
 		if (response.ok) {
 			response.json().then(function (json) {
 				answer = json['result']['message_id'];
+				sendSubmit();
 			});
-			sendSubmit();
 		} else {
 			console.log(
 			"Network request for" + url + "failed with response " +
