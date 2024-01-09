@@ -81,7 +81,7 @@ mysqli_close($link)
 
 		var url = 'https://api.telegram.org/bot' + token
 		+ '/sendPhoto?chat_id=' + chat_id
-		+ '&message_thread_id=' + message_thread_id
+		+ '&message_thread_id=' + estate_message_thread_id
 		+ '&photo=' + window.location.protocol + '//' + window.location.hostname + '/src/<?php echo $image ?>'
 		+ '&reply_markup={"inline_keyboard": [[{"text": "Изменить/Удалить", "url": ' + estate_app + '}]]}'
 		+ '&caption=<?php echo $msg ?>'
