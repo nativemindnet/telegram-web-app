@@ -91,10 +91,10 @@ error_reporting(E_ALL);
 			});
 		} else {
 			console.log(
-			"Network request for" + url + "failed with response " +
+			"Network request for" + url + " failed with response " +
 				response.status +
 				": " +
-				response.statusText,
+				response.description,
 			);
 		}
 		});
