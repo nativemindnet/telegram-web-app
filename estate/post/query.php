@@ -61,7 +61,7 @@ error_reporting(E_ALL);
 </head>
 <body>
 	<div class="body">
-	<div class="loading" style="display: none;"></div>
+	<div class="loading"></div>
 		<form id="form" action="success/index.php" method="POST">
 			<input type="text" name="OldMsgID" id="oldMsgID">
 			<input type="text" name="MsgID" id="msgID">
