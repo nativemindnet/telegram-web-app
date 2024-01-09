@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 	if (($_FILES['FileToSave']['name']!="")){
 		$target_dir = $_SERVER['DOCUMENT_ROOT'] . "/src/";
 		$file = $_FILES['FileToSave']['name'];
@@ -57,7 +61,7 @@
 </head>
 <body>
 	<div class="body">
-	<div class="loading"></div>
+	<div class="loading" style="display: none;"></div>
 		<form id="form" action="success/index.php" method="POST">
 			<input type="text" name="OldMsgID" id="oldMsgID">
 			<input type="text" name="MsgID" id="msgID">
