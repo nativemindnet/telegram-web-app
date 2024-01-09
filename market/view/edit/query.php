@@ -64,17 +64,15 @@ mysqli_close($link)
 		<a class="navBtn" id="back" href="/"><span>🏠</span></a>
 	</div>
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+	<script src="/script/config.js"></script>
 	<script type="text/javascript">
 		var answer;
-		var token = "5633923018:AAGVaML4ay4FGcrOpBtmmJFdzTI1K7HYqTw";
-		var chat_id = "@tkuik_group";
-		var message_thread_id = "322"
 
 		var url = 'https://api.telegram.org/bot' + token
 		+ '/sendPhoto?chat_id=' + chat_id
-		+ '&message_thread_id=' + message_thread_id
+		+ '&message_thread_id=' + market_message_thread_id
 		+ '&photo=' + window.location.protocol + '//' + window.location.hostname + '/src/<?php echo $image ?>'
-		+ '&reply_markup={"inline_keyboard": [[{"text": "Изменить/Удалить", "url": "t.me/tkuikbot/huahin_market"}]]}'
+		+ '&reply_markup={"inline_keyboard": [[{"text": "Изменить/Удалить", "url": ' + market_app + '}]]}'
 		+ '&caption=<?php echo $msg ?>'
 		+ '&parse_mode=html';
 		fetch(url).then(function (response) {
