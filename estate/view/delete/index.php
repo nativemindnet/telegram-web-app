@@ -24,19 +24,17 @@
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 	<script src="/script/script.js"></script>
 	<script src="/script/transl_ru.js"></script>
+	<script src="/script/config.js"></script>
 
 	<script type="text/javascript">
 		tg = window.Telegram.WebApp;
 
 		function sendData() {
 			document.querySelector(".loading").style.display = "block";
-			var token = "5633923018:AAGVaML4ay4FGcrOpBtmmJFdzTI1K7HYqTw";
-			var chat_id = "@tkuik_group";
-			var message_thread_id = "3"
 			var messageId = "<?php $query = mysqli_query($link, "select MsgID from estate_rent where ID = " . $_COOKIE['huahinCurrentPost']);
 					$result = mysqli_fetch_assoc($query);
 					echo $result['MsgID']; ?>";
-			var url = 'https://api.telegram.org/bot' + token + '/deleteMessage?chat_id=' + chat_id + '&message_thread_id=' + message_thread_id + '&message_id=' + messageId;
+			var url = 'https://api.telegram.org/bot' + token + '/deleteMessage?chat_id=' + chat_id + '&message_thread_id=' + estate_message_thread_id + '&message_id=' + messageId;
 
 			fetch(url).then(function (response) {
 				if (response.ok) {

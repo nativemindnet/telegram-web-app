@@ -1,3 +1,4 @@
 .DS_Store
 db.php
 update.sh
+/script/config.js
