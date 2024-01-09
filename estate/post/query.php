@@ -80,7 +80,7 @@ error_reporting(E_ALL);
 		+ '/sendPhoto?chat_id=' + chat_id
 		+ '&message_thread_id=' + estate_message_thread_id
 		+ '&photo=' + window.location.protocol + '//' + window.location.hostname + '/src/<?php echo $image ?>'
-		+ '&reply_markup={"inline_keyboard": [[{"text": "Изменить/Удалить", "url": "t.me/tkuikbot/huahin_estate"}]]}'
+		+ '&reply_markup={"inline_keyboard": [[{"text": "Изменить/Удалить", "url": ' + estate_app + '}]]}'
 		+ '&caption=<?php echo $msg ?>'
 		+ '&parse_mode=html';
 		fetch(url).then(function (response) {
