@@ -51,6 +51,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/db.php";
 	</div>
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 	<script src="/script/script.js"></script>
+	<script src="/script/config.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 	<script type="text/javascript">
@@ -128,12 +129,9 @@ include $_SERVER['DOCUMENT_ROOT'] . "/db.php";
 			+ "%0A" + "Комментарий: " + message
 			+ "%0AАвтор поста: @" + tg.initDataUnsafe.user.username;
 	
-			var token = "5633923018:AAGVaML4ay4FGcrOpBtmmJFdzTI1K7HYqTw";
-			var chat_id = "@tkuik_group";
-			var message_thread_id = "321"
 			var url = 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' 
-			+ chat_id + '&message_thread_id=' + message_thread_id + '&text=' 
-			+ msg + '&reply_markup={"inline_keyboard": [[{"text": "Изменить/Удалить", "url": "https://t.me/tkuikbot/huahin_service"}]]}'
+			+ chat_id + '&message_thread_id=' + service_message_thread_id + '&text=' 
+			+ msg + '&reply_markup={"inline_keyboard": [[{"text": "Изменить/Удалить", "url": ' + service_app + '}]]}'
 			+ '&parse_mode=html';
 	
 			fetch(url).then(function (response) {

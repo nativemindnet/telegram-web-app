@@ -84,18 +84,16 @@
 		<a class="navBtn" id="back" href="/"><span>🏠</span></a>
 	</div>
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+	<script src="/script/config.js"></script>
 	<script type="text/javascript">
 		var answer;
-		var token = "5633923018:AAGVaML4ay4FGcrOpBtmmJFdzTI1K7HYqTw";
-		var chat_id = "@tkuik_group";
-		var message_thread_id = "2"
 
 		if (<?php echo $categoryH; ?> == 1) {
 			var url = 'https://api.telegram.org/bot' + token
 			+ '/sendPhoto?chat_id=' + chat_id
-			+ '&message_thread_id=' + message_thread_id
+			+ '&message_thread_id=' + transport_message_thread_id
 			+ '&photo=' + window.location.protocol + '//' + window.location.hostname + '/src/<?php echo $image ?>'
-			+ '&reply_markup={"inline_keyboard": [[{"text": "Изменить/Удалить", "url": "t.me/tkuikbot/huahin_transport"}]]}'
+			+ '&reply_markup={"inline_keyboard": [[{"text": "Изменить/Удалить", "url": ' + transport_app + '}]]}'
 			+ '&caption=<?php echo $msg ?>'
 			+ '&parse_mode=html';
 			fetch(url).then(function (response) {
@@ -117,9 +115,9 @@
 		else {
 			var url = 'https://api.telegram.org/bot' + token
 			+ '/sendMessage?chat_id=' + chat_id
-			+ '&message_thread_id=' + message_thread_id
+			+ '&message_thread_id=' + transport_message_thread_id
 			+ '&text=<?php echo $msg ?>'
-			+ '&reply_markup={"inline_keyboard": [[{"text": "Изменить/Удалить", "url": "t.me/tkuikbot/huahin_transport"}]]}'
+			+ '&reply_markup={"inline_keyboard": [[{"text": "Изменить/Удалить", "url": ' + transport_app + '}]]}'
 			+ '&parse_mode=html';
 			fetch(url).then(function (response) {
 			if (response.ok) {
